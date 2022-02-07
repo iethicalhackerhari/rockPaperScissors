@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Patua+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: sans-serif;
+}
+
+.main-div{
+   
+    padding: 10px;
+    background-color:#222831;
+    height: 100vh;
+
+}
+
+.score-card{
+    margin-top: 5vh;
+    color:#EEEEEE ;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+
+}
+.score-card p{
+    text-align: center;
+    padding: 10px;
+}
+.intro{
+    margin-top: 10vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+
+    
+}
+.game-over h1{
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    
+}
+.intro h1 , .start-game h1 {
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 50px;
+}
+
+.intro button , .rock ,.paper, .scissors{
+    color: #EEEEEE;
+    border: none;
+    font-size: 25px;
+    background-color:#00ADB5 ;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    
+}
+.start-game{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+    
+
+}
+
+.hands{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.player-hand{
+    transform: rotateY(180deg);
+}
+ div.fadeOut{
+     pointer-events: none;
+     opacity: 0;
+ }
+ div.fadeIn{
+     pointer-events: all;
+     opacity: 1;
+ }
+
+ @keyframes shakePlayer{
+     0%{
+         transform: rotateY(180deg) translateY(-50px);
+
+     }
+     15%{
+         transform: rotateY(180deg) translateY(0px);
+     }
+     30%{
+        transform: rotateY(180deg) translateY(-50px);
+
+    }
+    45%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    60%{
+        transform: rotateY(180deg) translateY(-50px);
+
+    }
+    75%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    85%{
+        transform: rotateY(180deg) translateY(-50px);
+
+    }
+    100%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+
+ }
+
+ @keyframes shakeComputer{
+    0%{
+        transform: translateY(-50px);
+
+    }
+    15%{
+        transform: translateY(0px);
+    }
+    30%{
+       transform: translateY(-50px);
+
+   }
+   45%{
+       transform: translateY(0px);
+   }
+   60%{
+       transform: translateY(-50px);
+
+   }
+   75%{
+       transform: translateY(0px);
+   }
+   85%{
+       transform: translateY(-50px);
+
+   }
+   100%{
+       transform: translateY(0px);
+   }
+
+}
+
+
+
+
