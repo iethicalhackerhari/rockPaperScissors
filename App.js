@@ -71,7 +71,7 @@ const startGame = ()=>{
            
     }
             
-    if (pScore==2||cScore==2) {
+    if (pScore==5||cScore==5) {
        
             gameOver();
         }
